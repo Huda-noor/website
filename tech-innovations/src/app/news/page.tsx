@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
+import Layout from '../components/Layout';
 
 interface Article {
   title: string;
@@ -42,6 +43,7 @@ export default function News() {
 
   return (
     <div className="min-h-screen bg-gray-100">
+      <Layout>
       <header className="bg-blue-800 text-white text-center py-4">
         <h1 className="text-2xl font-bold">Tech News</h1>
       </header>
@@ -78,7 +80,7 @@ export default function News() {
             </div>
           ))}
         </div>
-      </div>
+      </div></Layout>
     </div>
   );
 }
