@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
+import Image from 'next/image';
 
 interface Article {
   title: string;
@@ -59,10 +60,10 @@ export default function News() {
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
               {article.urlToImage && (
-                <img
-                  src={article.urlToImage}
-                  alt={article.title}
-                  className="w-full h-48 object-cover"
+                <Image
+                src={article.urlToImage}
+                alt={article.title}
+                className="w-full h-48 object-cover"
                 />
               )}
               <div className="p-4">

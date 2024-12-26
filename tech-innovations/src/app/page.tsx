@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from './components/Layout';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -9,11 +10,10 @@ export default function Home() {
         <p className="text-lg text-gray-600 mb-6">
           Stay updated with the latest advancements in technology and innovation.
         </p>
-        <img
-          src="/images/ai.jpg"
-          alt="Tech Innovations"
-          className="rounded-lg mx-auto w-full sm:w-1/2"
-        />
+        <Image
+         src="/images/ai.jpg"
+         alt="Tech Innovations"
+         className="rounded-lg mx-auto w-full sm:w-1/2" />
       </div>
     </Layout>
   );
